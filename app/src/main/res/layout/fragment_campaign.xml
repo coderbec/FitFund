@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.becmartin.fitfund.CampaignFragment"
+    android:background="#ffffff">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/sectionOne"
+        >
+        <TextView
+            android:id="@+id/schoolCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:padding="10dp"
+            android:text=""
+            android:textColorHint="#bbbbbb"
+            />
+        <TextView
+            android:id="@+id/section_one_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:padding="10dp"
+            android:text="I want to run or walk:"
+            android:textColorHint="#bbbbbb"
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/frequencySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:padding="10dp"
+            android:hint="First Name"
+            android:textColorHint="#bbbbbb"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sectionOne"
+        android:padding="10dp"
+        android:id="@+id/sectionTwo"
+        >
+        <TextView
+            android:id="@+id/section_two_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:padding="10dp"
+            android:text="For a minimum of:"
+            android:textColorHint="#bbbbbb"
+            >
+
+        </TextView>
+        <EditText
+            android:id="@+id/distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_default_bg"
+            android:layout_marginTop="-2dp"
+            android:padding="10dp"
+            android:hint="Kilometers"
+            android:textColorHint="#bbbbbb"/>
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:text="Start My Campaign"
+            style="@style/DefaultButtonText"
+            android:background="@drawable/button_default_bg"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.becmartin.fitfund.MainActivity">
+
+    <item android:id="@+id/action_logout" android:title="Log Out"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/share_action"
+        android:icon="@android:drawable/ic_menu_share"
+        android:visible="false"
+        android:title="Share"
+        android:showAsAction="ifRoom" />
+    <item android:id="@+id/settings_action"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="Setting"
+        android:showAsAction="ifRoom" />
+</menu>

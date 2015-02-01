@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.becmartin.fitfund.SignUpActivity$PlaceholderFragment"
+    android:background="@color/apptheme_color">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/sectionOne"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/section_one_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_top_bg"
+                android:padding="10dp"
+                android:text="Who are you?"
+                android:textColorHint="#bbbbbb"
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_top_bg"
+                android:padding="10dp"
+                android:hint="First Name"
+                android:textColorHint="#bbbbbb"
+                android:drawableLeft="@drawable/ic_action_person"
+                />
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_default_bg"
+                android:layout_marginTop="-2dp"
+                android:padding="10dp"
+                android:hint="Last Name"
+                android:textColorHint="#bbbbbb"
+                android:drawableLeft="@drawable/ic_action_person"
+                />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_bg"
+                android:layout_marginTop="-2dp"
+                android:padding="10dp"
+                android:hint="Email"
+                android:textColorHint="#bbbbbb"
+                android:drawableLeft="@drawable/ic_password"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sectionOne"
+        android:padding="10dp"
+        android:id="@+id/sectionTwo"
+        >
+        <TextView
+            android:id="@+id/section_two_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:padding="10dp"
+            android:text="What is your campaign code?"
+            android:textColorHint="#bbbbbb"
+            >
+
+        </TextView>
+        <EditText
+            android:id="@+id/campaignCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_default_bg"
+            android:layout_marginTop="-2dp"
+            android:padding="10dp"
+            android:hint="Campaign Code"
+            android:textColorHint="#bbbbbb"
+            android:drawableLeft="@drawable/ic_internet"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sectionTwo"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/section_three_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:padding="10dp"
+            android:text="What is your password?"
+            android:textColorHint="#bbbbbb"
+            >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bottom_bg"
+            android:layout_marginTop="-2dp"
+            android:padding="10dp"
+            android:hint="Password"
+            android:textColorHint="#bbbbbb"
+            android:password="true"
+            android:drawableLeft="@drawable/ic_password"/>
+
+        <Button
+            android:id="@+id/btnSingIn"
+            android:text="Proceed to set goals"
+            style="@style/AuthButton"
+            android:layout_marginTop="20dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
